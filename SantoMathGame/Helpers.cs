@@ -22,7 +22,7 @@ namespace SantoMathGame
         };
         internal static void PrintGames()
         {
-            var gamesToPrint = games.Where(x => x.Date > new DateTime(2023, 08, 01)).OrderByDescending ((x=> x.Score));
+            var gamesToPrint = games;
             Console.Clear();
             Console.WriteLine("Game History");
             Console.WriteLine("-----------------------------------------------");
